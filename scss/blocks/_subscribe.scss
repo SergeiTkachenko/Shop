@@ -1,0 +1,80 @@
+.subscribe {
+    background-image: url(../img/footer.jpg);
+    padding-top: 87px;
+    padding-bottom: 126px;
+}
+
+.subscribe__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center; 
+}
+
+.subscribe__block {
+    padding-right: 95px;
+}
+
+.subscribe__img {
+    border-radius: 50%;
+}
+
+.subscribe__quote {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $black;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0em;
+    max-width: 355px;
+}
+
+.subscribe__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: $black;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.subscribe__sub-title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.subscribe__inputarea{
+    background: #E1E1E1;
+    padding-left: 22px;
+    width: 234px;
+    height: 47px;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.subscribe__button {
+    background-color: $pink-text;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    width: 100px;
+    height: 49px;
+    border: none;
+    color: $white;
+    border-radius: 0px 50px 50px 0px;
+    margin-left: -4px;
+}
+
+.subscribe__button:hover,
+.subscribe__button:focus {
+    cursor: pointer;
+}

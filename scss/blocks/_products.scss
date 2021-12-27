@@ -1,0 +1,149 @@
+.products__title {
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+
+.products__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey-text;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 48px;
+}
+
+.prosucts__item {
+    background-color: #F8F8F8;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+/* knopka zatemnenie */
+
+.cart-wrapper {
+    position: relative;
+  }
+  
+.img {
+    width: 100%;
+    min-height: 150px;
+}
+  
+.overlay {
+    width: 100%;
+    min-height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+}
+  
+.products_button {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid $white;
+    background-color: rgba(58, 56, 56, 0.86);
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+    padding: 10px 13px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+ 
+.products_button-text {
+    margin-left: 11px;
+}
+  
+  
+.button-overlay {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.overlay,
+.products_button {
+    display: none;
+}
+  
+.cart:hover .products_button,
+.cart:hover .overlay {
+    display: block;
+} 
+/* konec knopki */
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prosucts__item-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $black;
+    margin-top: 25px;
+    margin-left: 18px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+
+.prosucts__item-desc {
+    max-width: 315px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-left: 16px;
+    padding-bottom: 18px;
+}
+
+.prosucts__item-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $pink-text;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.products__button {
+    border: 1px solid $pink-text;
+    text-align: center;
+    color: $pink-text;
+    background: $white;
+    padding: 14px 39px;
+    text-decoration: none;
+    margin-top: 48px;
+    margin-bottom: 100px;
+    max-width: 230px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.products__button:hover,
+.products__button:focus {
+    background-color: $pink-text;
+    color: $white;
+    cursor: pointer;
+}
