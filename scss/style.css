@@ -1,0 +1,525 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px; }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+.header {
+  background-color: #222222; }
+
+.header__logo {
+  margin: 0 41px 0 0; }
+
+.header__button {
+  background-color: transparent;
+  border: 0; }
+
+.header_link {
+  margin: 0 0 0 33px; }
+
+.header__wrp {
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+  align-items: center; }
+
+.header__menu {
+  display: none;
+  margin: 0 63px; }
+
+.display-block {
+  display: block; }
+
+.header__button-menu {
+  position: relative; }
+
+.header__burger {
+  fill: #fff;
+  background-color: #222222;
+  border: none; }
+
+.header__burger:hover,
+.header__burger:focus {
+  fill: #f16d7f;
+  cursor: pointer; }
+
+.header__menu {
+  position: absolute;
+  top: 100%;
+  right: -300px;
+  background: white;
+  display: none;
+  height: 764px;
+  width: 232px;
+  box-shadow: -7px 3px 5px grey; }
+
+.header__menu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.menu-sub-item__item-link {
+  color: #6F6E6E;
+  text-decoration: none;
+  margin-left: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14px;
+  line-height: 2; }
+
+.menu-sub-item__item-link:hover {
+  background-color: #f16d7f;
+  cursor: pointer; }
+
+.header__burger:hover + .header__menu,
+.header__burger:focus + .header__menu {
+  display: block; }
+
+.header__menu-title {
+  text-transform: uppercase;
+  padding: 37px 0 0 34px;
+  font-size: 14px;
+  line-height: 17px; }
+
+.menu-sub-item__title {
+  text-transform: uppercase;
+  padding: 24px 0 12px 33px;
+  color: #f16d7f; }
+
+.brand {
+  display: flex; }
+
+.brand__title-wrp {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 92px;
+  background-color: #F1E4E6;
+  flex-grow: 1; }
+
+.brand__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+  text-transform: uppercase;
+  position: relative; }
+
+.brand__title::after {
+  content: '';
+  width: 12px;
+  height: 100%;
+  background-color: #f16d7f;
+  position: absolute;
+  left: -27px;
+  top: 0px; }
+
+.brand__sub-title {
+  display: block;
+  font-size: 32px;
+  line-height: 38px; }
+
+.brand__sub-title-pink {
+  color: #f16d7f; }
+
+.sales__item {
+  width: 360px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.sales__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 65px;
+  justify-content: space-between; }
+
+.sales__item--woman {
+  background-image: url("../img/sales-woman.jpg");
+  display: flex;
+  flex-direction: column; }
+
+.sales__item--man {
+  background-image: url("../img/sales-man.jpg");
+  display: flex;
+  flex-direction: column; }
+
+.sales__item--kids {
+  background-image: url("../img/sales-kid.jpg");
+  display: flex;
+  flex-direction: column; }
+
+.sales__item--shoes {
+  background-image: url("../img/sales-accesories.jpg");
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 180px;
+  margin-top: 30px;
+  margin-bottom: 96px; }
+
+.sales__item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase; }
+
+.sales__item-title {
+  color: #f16d7f;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: 0em; }
+
+.products__title {
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em; }
+
+.products__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 48px; }
+
+.prosucts__item {
+  background-color: #F8F8F8;
+  margin-bottom: 30px;
+  padding-bottom: 20px; }
+
+/* knopka zatemnenie */
+.cart-wrapper {
+  position: relative; }
+
+.img {
+  width: 100%;
+  min-height: 150px; }
+
+.overlay {
+  width: 100%;
+  min-height: 100%;
+  background: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0; }
+
+.products_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  background-color: rgba(58, 56, 56, 0.86);
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  padding: 10px 13px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */ }
+
+.products_button-text {
+  margin-left: 11px; }
+
+.button-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.overlay,
+.products_button {
+  display: none; }
+
+.cart:hover .products_button,
+.cart:hover .overlay {
+  display: block; }
+
+/* konec knopki */
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.prosucts__item-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  margin-top: 25px;
+  margin-left: 18px;
+  margin-bottom: 13px;
+  text-transform: uppercase; }
+
+.prosucts__item-desc {
+  max-width: 315px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin-left: 16px;
+  padding-bottom: 18px; }
+
+.prosucts__item-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+  text-decoration: none;
+  margin-left: 18px; }
+
+.products__button {
+  border: 1px solid #f16d7f;
+  text-align: center;
+  color: #f16d7f;
+  background: #fff;
+  padding: 14px 39px;
+  text-decoration: none;
+  margin-top: 48px;
+  margin-bottom: 100px;
+  max-width: 230px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px; }
+
+.products__button:hover,
+.products__button:focus {
+  background-color: #f16d7f;
+  color: #fff;
+  cursor: pointer; }
+
+.advantage {
+  background-color: #222222;
+  padding-top: 103px;
+  padding-bottom: 103px; }
+
+.advantage__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center; }
+
+.advantage__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  padding-bottom: 16px; }
+
+.advantage__img-delivery {
+  padding-bottom: 28px; }
+
+.advantage__img-sales {
+  padding-bottom: 19px; }
+
+.advantage__img-quality {
+  padding-bottom: 25px; }
+
+.advantage__text {
+  max-width: 300px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff; }
+
+.subscribe {
+  background-image: url(../img/footer.jpg);
+  padding-top: 87px;
+  padding-bottom: 126px; }
+
+.subscribe__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center; }
+
+.subscribe__block {
+  padding-right: 95px; }
+
+.subscribe__img {
+  border-radius: 50%; }
+
+.subscribe__quote {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222222;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0em;
+  max-width: 355px; }
+
+.subscribe__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222222;
+  text-transform: uppercase;
+  padding-top: 30px; }
+
+.subscribe__sub-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  padding-bottom: 25px; }
+
+.subscribe__inputarea {
+  background: #E1E1E1;
+  padding-left: 22px;
+  width: 234px;
+  height: 47px;
+  border: none;
+  border-radius: 50px 0px 0px 50px; }
+
+.subscribe__button {
+  background-color: #f16d7f;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100px;
+  height: 49px;
+  border: none;
+  color: #fff;
+  border-radius: 0px 50px 50px 0px;
+  margin-left: -4px; }
+
+.subscribe__button:hover,
+.subscribe__button:focus {
+  cursor: pointer; }
+
+.copyright {
+  background-color: #222222; }
+
+.copyright__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center; }
+
+.copyright__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  margin-top: 30px; }
+
+.copyright_img-button {
+  padding: 0px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 7px;
+  width: 32px;
+  height: 32px; }
+
+.copyright_img-button {
+  background: #fff;
+  border: none; }
+
+.copyright_img {
+  fill: #222222; }
+
+.copyright_img-button:hover,
+.copyright_img-button:focus {
+  background: #f16d7f; }
+
+.copyright_img-button:hover .copyright_img,
+.copyright_img-button:focus .copyright_img {
+  fill: #fff; }
+
+.copyright_img-button:active .copyright_img {
+  fill: red; }
+
+/*# sourceMappingURL=style.css.map */
