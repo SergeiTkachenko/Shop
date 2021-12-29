@@ -2,6 +2,16 @@
     background-color: $black;
     padding-top: 103px;
     padding-bottom: 103px;
+
+    @include tablet {
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    @include mobile {
+        padding-bottom: 33px;
+
+    }
 }
 
 .advantage__list {
@@ -9,6 +19,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include mobile {
+
+    }
 }
 
 .advantage__title {
@@ -39,4 +57,12 @@
     font-size: 14px;
     line-height: 17px;
     color: $white;
+
+    @include tablet {
+        margin: 0 auto 48px auto;
+    }
+
+    @include mobile {
+
+    }
 }

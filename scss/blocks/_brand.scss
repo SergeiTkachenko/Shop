@@ -38,3 +38,43 @@
 .brand__sub-title-pink {
     color: $pink-text;
 }
+
+@media (max-width: $tablet-width) {
+    .brand__img {
+        width: 50%;
+        height: 368px;
+        object-fit: cover;
+    }
+
+    .brand__title-wrp {
+        width: 50%;
+        min-height: 368px;
+
+    }
+
+    .brand__title {
+        font-size: 44px;
+        line-height: 58px;
+    }
+
+    .brand__sub-title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+@media (max-width: $mobile-width) {  
+    .brand__img {
+        display: none;
+    }
+
+    .brand__title {
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .brand__sub-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

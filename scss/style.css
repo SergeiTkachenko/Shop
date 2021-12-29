@@ -67,11 +67,20 @@ body {
   width: 1140px;
   margin: 0 auto; }
 
+@media (max-width: 1599px) {
+  .container {
+    width: 96%; } }
+@media (max-width: 767px) {
+  .container {
+    width: 91%; } }
 .header {
   background-color: #222222; }
 
 .header__logo {
   margin: 0 41px 0 0; }
+  @media (max-width: 1599px) {
+    .header__logo {
+      margin-left: 16px; } }
 
 .header__button {
   background-color: transparent;
@@ -79,6 +88,9 @@ body {
 
 .header_link {
   margin: 0 0 0 33px; }
+  @media (max-width: 767px) {
+    .header_link {
+      display: none; } }
 
 .header__wrp {
   display: flex;
@@ -115,11 +127,26 @@ body {
   height: 764px;
   width: 232px;
   box-shadow: -7px 3px 5px grey; }
+  @media (max-width: 1599px) {
+    .header__menu {
+      right: -85px;
+      position: absolute;
+      z-index: 9999; } }
 
 .header__menu-list {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+.header__burger:hover + .header__menu,
+.header__burger:focus + .header__menu {
+  display: block; }
+
+.header__menu-title {
+  text-transform: uppercase;
+  padding: 37px 0 0 34px;
+  font-size: 14px;
+  line-height: 17px; }
 
 .menu-sub-item__item-link {
   color: #6F6E6E;
@@ -133,16 +160,6 @@ body {
 .menu-sub-item__item-link:hover {
   background-color: #f16d7f;
   cursor: pointer; }
-
-.header__burger:hover + .header__menu,
-.header__burger:focus + .header__menu {
-  display: block; }
-
-.header__menu-title {
-  text-transform: uppercase;
-  padding: 37px 0 0 34px;
-  font-size: 14px;
-  line-height: 17px; }
 
 .menu-sub-item__title {
   text-transform: uppercase;
@@ -184,12 +201,50 @@ body {
 .brand__sub-title-pink {
   color: #f16d7f; }
 
+@media (max-width: 1599px) {
+  .brand__img {
+    width: 50%;
+    height: 368px;
+    object-fit: cover; }
+
+  .brand__title-wrp {
+    width: 50%;
+    min-height: 368px; }
+
+  .brand__title {
+    font-size: 44px;
+    line-height: 58px; }
+
+  .brand__sub-title {
+    font-size: 24px;
+    line-height: 29px; } }
+@media (max-width: 767px) {
+  .brand__img {
+    display: none; }
+
+  .brand__title {
+    font-size: 38px;
+    line-height: 45px; }
+
+  .brand__sub-title {
+    font-size: 20px;
+    line-height: 24px; } }
 .sales__item {
   width: 360px;
   min-height: 260px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 1599px) {
+    .sales__item {
+      width: 33%;
+      min-height: 168px; } }
+  @media (max-width: 767px) {
+    .sales__item {
+      width: 100%;
+      min-height: 247px; } }
 
 .sales__list {
   display: flex;
@@ -201,16 +256,25 @@ body {
   background-image: url("../img/sales-woman.jpg");
   display: flex;
   flex-direction: column; }
+  @media (max-width: 1599px) {
+    .sales__item--woman {
+      margin-bottom: 32px; } }
 
 .sales__item--man {
   background-image: url("../img/sales-man.jpg");
   display: flex;
   flex-direction: column; }
+  @media (max-width: 1599px) {
+    .sales__item--man {
+      margin-bottom: 32px; } }
 
 .sales__item--kids {
   background-image: url("../img/sales-kid.jpg");
   display: flex;
   flex-direction: column; }
+  @media (max-width: 1599px) {
+    .sales__item--kids {
+      margin-bottom: 32px; } }
 
 .sales__item--shoes {
   background-image: url("../img/sales-accesories.jpg");
@@ -220,6 +284,14 @@ body {
   min-height: 180px;
   margin-top: 30px;
   margin-bottom: 96px; }
+  @media (max-width: 1599px) {
+    .sales__item--shoes {
+      min-height: 116px;
+      margin-top: 0px;
+      margin-bottom: 155px; } }
+  @media (max-width: 767px) {
+    .sales__item--shoes {
+      margin-bottom: 64px; } }
 
 .sales__item-text {
   font-style: normal;
@@ -259,11 +331,24 @@ body {
   text-align: center;
   margin-top: 6px;
   margin-bottom: 48px; }
+  @media (max-width: 1599px) {
+    .products__text {
+      margin-bottom: 72px; } }
+  @media (max-width: 767px) {
+    .products__text {
+      margin-bottom: 65px; } }
 
 .prosucts__item {
   background-color: #F8F8F8;
   margin-bottom: 30px;
   padding-bottom: 20px; }
+  @media (max-width: 1599px) {
+    .prosucts__item {
+      margin-bottom: 17px; } }
+  @media (max-width: 767px) {
+    .prosucts__item {
+      margin-left: auto;
+      margin-right: auto; } }
 
 /* knopka zatemnenie */
 .cart-wrapper {
@@ -290,10 +375,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #fff;
-  padding: 10px 13px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */ }
+  padding: 10px 13px; }
 
 .products_button-text {
   margin-left: 11px; }
@@ -365,6 +447,14 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px; }
+  @media (max-width: 1599px) {
+    .products__button {
+      margin-top: 16px;
+      margin-bottom: 65px; } }
+  @media (max-width: 767px) {
+    .products__button {
+      margin-top: 25px;
+      margin-bottom: 96px; } }
 
 .products__button:hover,
 .products__button:focus {
@@ -376,12 +466,22 @@ body {
   background-color: #222222;
   padding-top: 103px;
   padding-bottom: 103px; }
+  @media (max-width: 1599px) {
+    .advantage {
+      padding-top: 48px;
+      padding-bottom: 64px; } }
+  @media (max-width: 767px) {
+    .advantage {
+      padding-bottom: 33px; } }
 
 .advantage__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center; }
+  @media (max-width: 1599px) {
+    .advantage__list {
+      display: block; } }
 
 .advantage__title {
   font-style: normal;
@@ -407,20 +507,35 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #fff; }
+  @media (max-width: 1599px) {
+    .advantage__text {
+      margin: 0 auto 48px auto; } }
 
 .subscribe {
   background-image: url(../img/footer.jpg);
   padding-top: 87px;
   padding-bottom: 126px; }
+  @media (max-width: 1599px) {
+    .subscribe {
+      padding-top: 43px;
+      padding-bottom: 219px;
+      background-repeat: no-repeat;
+      background-size: cover; } }
 
 .subscribe__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center; }
+  @media (max-width: 1599px) {
+    .subscribe__list {
+      display: block; } }
 
 .subscribe__block {
-  padding-right: 95px; }
+  margin-right: 95px; }
+  @media (max-width: 1599px) {
+    .subscribe__block {
+      margin: 20px auto 20px auto; } }
 
 .subscribe__img {
   border-radius: 50%; }
@@ -434,6 +549,9 @@ body {
   font-weight: 400;
   letter-spacing: 0em;
   max-width: 355px; }
+  @media (max-width: 1599px) {
+    .subscribe__quote {
+      margin: 20px auto 48px auto; } }
 
 .subscribe__title {
   font-style: normal;
@@ -453,6 +571,10 @@ body {
   letter-spacing: 0em;
   text-transform: uppercase;
   padding-bottom: 25px; }
+  @media (max-width: 767px) {
+    .subscribe__sub-title {
+      font-size: 14px;
+      margin-top: -10px; } }
 
 .subscribe__inputarea {
   background: #E1E1E1;
@@ -461,6 +583,10 @@ body {
   height: 47px;
   border: none;
   border-radius: 50px 0px 0px 50px; }
+  @media (max-width: 767px) {
+    .subscribe__inputarea {
+      width: 200px;
+      height: 47px; } }
 
 .subscribe__button {
   background-color: #f16d7f;
@@ -474,6 +600,10 @@ body {
   color: #fff;
   border-radius: 0px 50px 50px 0px;
   margin-left: -4px; }
+  @media (max-width: 767px) {
+    .subscribe__button {
+      width: 80px;
+      height: 49px; } }
 
 .subscribe__button:hover,
 .subscribe__button:focus {
@@ -487,6 +617,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: center; }
+  @media (max-width: 767px) {
+    .copyright__block {
+      flex-direction: column-reverse; } }
 
 .copyright__text {
   font-style: normal;
@@ -495,6 +628,9 @@ body {
   line-height: 19px;
   color: #fff;
   margin-top: 30px; }
+  @media (max-width: 767px) {
+    .copyright__text {
+      margin: 10px auto 10px auto; } }
 
 .copyright_img-button {
   padding: 0px;
@@ -502,9 +638,7 @@ body {
   margin-bottom: 24px;
   margin-right: 7px;
   width: 32px;
-  height: 32px; }
-
-.copyright_img-button {
+  height: 32px;
   background: #fff;
   border: none; }
 
@@ -521,5 +655,9 @@ body {
 
 .copyright_img-button:active .copyright_img {
   fill: red; }
+
+@media (max-width: 767px) {
+  .copyright__social {
+    margin: 14px auto 10px auto; } }
 
 /*# sourceMappingURL=style.css.map */

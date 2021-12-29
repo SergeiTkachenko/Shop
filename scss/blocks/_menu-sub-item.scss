@@ -1,0 +1,20 @@
+.menu-sub-item__item-link {
+    color: #6F6E6E;
+    text-decoration: none;
+    margin-left: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 14px;
+    line-height: 2;
+}
+      
+.menu-sub-item__item-link:hover {
+    background-color: $pink-text;
+    cursor: pointer;
+}
+
+.menu-sub-item__title {
+    text-transform: uppercase;
+    padding: 24px 0 12px 33px;
+    color: $pink-text;
+}
