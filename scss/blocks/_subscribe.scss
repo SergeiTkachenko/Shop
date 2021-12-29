@@ -2,6 +2,17 @@
     background-image: url(../img/footer.jpg);
     padding-top: 87px;
     padding-bottom: 126px;
+
+    @include tablet {
+        padding-top: 43px;
+        padding-bottom: 219px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @include mobile {
+
+    }
 }
 
 .subscribe__list {
@@ -9,10 +20,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center; 
+
+    @include tablet {
+        display: block;
+    }
+
+    @include mobile {
+
+    }
 }
 
 .subscribe__block {
-    padding-right: 95px;
+    margin-right: 95px;
+
+    @include tablet {
+        margin: 20px auto 20px auto;
+    }
+
+    @include mobile {
+
+    }
 }
 
 .subscribe__img {
@@ -28,6 +55,14 @@
     font-weight: 400;
     letter-spacing: 0em;
     max-width: 355px;
+
+    @include tablet {
+        margin: 20px auto 48px auto;
+    }
+
+    @include mobile {
+
+    }
 }
 
 .subscribe__title {
@@ -39,6 +74,7 @@
     color: $black;
     text-transform: uppercase;
     padding-top: 30px;
+
 }
 
 .subscribe__sub-title {
@@ -49,6 +85,11 @@
     letter-spacing: 0em;
     text-transform: uppercase;
     padding-bottom: 25px;
+
+    @include mobile {
+        font-size: 14px;
+        margin-top: -10px;
+    }
 }
 
 .subscribe__inputarea{
@@ -58,6 +99,11 @@
     height: 47px;
     border: none;
     border-radius: 50px 0px 0px 50px;
+
+    @include mobile {
+        width: 200px;
+        height: 47px;
+    }
 }
 
 .subscribe__button {
@@ -72,6 +118,11 @@
     color: $white;
     border-radius: 0px 50px 50px 0px;
     margin-left: -4px;
+
+    @include mobile {
+        width: 80px;
+        height: 49px;
+    }
 }
 
 .subscribe__button:hover,

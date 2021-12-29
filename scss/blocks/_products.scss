@@ -19,12 +19,30 @@
     text-align: center;
     margin-top: 6px;
     margin-bottom: 48px;
+
+    @include tablet {
+        margin-bottom: 72px;
+    }
+
+    @include mobile {
+        margin-bottom: 65px;
+
+    }
 }
 
 .prosucts__item {
     background-color: #F8F8F8;
     margin-bottom: 30px;
     padding-bottom: 20px;
+
+    @include tablet {
+        margin-bottom: 17px;
+    }
+
+    @include mobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /* knopka zatemnenie */
 
@@ -56,9 +74,6 @@
     line-height: 17px;
     color: $white;
     padding: 10px 13px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
  
 .products_button-text {
@@ -139,6 +154,17 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+
+    @include tablet {
+        margin-top: 16px;
+        margin-bottom: 65px;
+        }
+
+        @include mobile {
+        margin-top: 25px;
+        margin-bottom: 96px;
+
+        }
 }
 
 .products__button:hover,

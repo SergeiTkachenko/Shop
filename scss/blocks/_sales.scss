@@ -4,6 +4,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet {
+        width: 33%;
+        min-height: 168px;
+    }
+
+    @include mobile {
+        width: 100%;
+        min-height: 247px;
+    }
 }
 
 .sales__list {
@@ -17,18 +29,42 @@
     background-image: url('../img/sales-woman.jpg');
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+
+    @include mobile {
+
+    }
 }
 
 .sales__item--man {
     background-image: url('../img/sales-man.jpg');
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+
+    @include mobile {
+
+    }
 }
 
 .sales__item--kids {
     background-image: url('../img/sales-kid.jpg');
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+
+    @include mobile {
+
+    }
 }
 
 .sales__item--shoes {
@@ -39,6 +75,15 @@
     min-height: 180px;
     margin-top: 30px;
     margin-bottom: 96px;
+
+    @include tablet {
+        min-height: 116px;
+        margin-top: 0px;
+        margin-bottom: 155px;
+    }
+    @include mobile {
+        margin-bottom: 64px;
+    }
 }
 
 .sales__item-text {

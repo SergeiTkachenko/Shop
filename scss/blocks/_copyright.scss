@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center; 
+
+    @include mobile {
+        flex-direction: column-reverse;
+    }
 }
 
 .copyright__text {
@@ -16,6 +20,10 @@
     line-height: 19px;
     color: $white;
     margin-top: 30px;
+
+    @include mobile {
+        margin: 10px auto 10px auto;
+    }
 }
 
 .copyright_img-button {
@@ -25,12 +33,9 @@
     margin-right: 7px;
     width: 32px;
     height: 32px;
-}
-
-.copyright_img-button {
     background: $white;
     border: none;
-  }
+}
 
 .copyright_img {
     fill: $black;
@@ -48,4 +53,10 @@
 
 .copyright_img-button:active .copyright_img {
     fill: red;
+}
+
+.copyright__social {
+    @include mobile {
+        margin: 14px auto 10px auto;
+    }
 }
