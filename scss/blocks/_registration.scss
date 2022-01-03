@@ -1,0 +1,210 @@
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.registration__wrap {
+    display: flex;
+
+    @media (max-width: $mobile-width) {
+        flex-direction: column;
+    }
+}
+
+.registration__title-text {
+    background-color: $pink-bkg;
+    width: 100%;
+    padding: 59px 0 60px 230px;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: $pink-text;
+    margin-bottom: 64px;
+
+    @media (max-width: $tablet-width) {
+        padding-left: 16px;
+        margin-bottom: 40px;
+    }
+    @media (max-width: $mobile-width) {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+.registration__form {
+    max-width: 360px;
+}
+
+.registration__form-title {
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.registration__form-input {
+    height: 45px;
+    width: 360px;
+    margin-bottom: 20px;
+    border: 2px solid #d1d0d0;
+
+    @media (max-width: $mobile-width) {
+        width: 350px;
+    }
+}
+
+.registration__form-help {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: $grey-area;
+}
+
+input::placeholder {
+    color: $grey-area;
+}
+
+.registration__button {
+    border: 1px solid $pink-text;
+    background-color: $pink-text;
+    color: $white;
+    padding: 16px 0;
+    text-decoration: none;
+    max-width: 167px;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-top: 39px;
+    margin-bottom: 96px;
+    display: inline-block;
+
+    @media (max-width: $mobile-width) {
+        margin-bottom: 40px;
+    }
+}
+
+.registration__button-text {
+    margin-right: 20px;
+}
+
+.registration__button-img {
+    fill: $white;
+}
+
+.registration__button:hover,
+.registration__button:focus {
+    color: $pink-text;
+    background: $white;
+    cursor: pointer;
+}
+
+.registration__button:hover .registration__button-img,
+.registration__button:focus .registration__button-img {
+    fill: $pink-text;
+}
+
+.registration__content {
+    margin-left: 128px;
+
+    @media (max-width: $mobile-width) {
+        margin-left: 0px;
+    }
+}
+
+.registration__content-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 22px;
+
+    @media (max-width: $tablet-width) {
+        padding-bottom: 32px;
+        font-size: 16px;
+        line-height: 19px;  
+    }
+}
+
+.registration__content-text {
+    max-width: 652px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 21px;
+}
+
+.registration__content-item {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 35px;
+
+}
+
+.registration__content-item:before {
+    content: '✓';
+    position: absolute;
+    margin-left: -35px;
+}
+
+.registration__radio {
+    padding-top: 11px;
+    padding-bottom: 13px;
+}
+
+.registration__radio-input-male {
+    display: none;
+  } 
+  
+  .registration__radio-label-male {
+    position: relative;
+    padding-left: 27px; 
+  }
+  
+  .registration__radio-label-male:after {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    border: 2px solid $grey-area;
+    border-radius: 50%;
+    right: 40px;
+    top: -1px;
+  } 
+  
+  .registration__radio-input-male:checked+.registration__radio-label-male:after {
+    background: $pink-text;
+    background-size: 10px 10px;
+  }
+
+  .registration__radio-input-female {
+    display: none;
+  } 
+  
+  .registration__radio-label-female {
+    position: relative;
+    padding-left: 47px; 
+  }
+  
+  .registration__radio-label-female:after {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    border: 2px solid $grey-area;
+    border-radius: 50%;
+    right: 55px;
+    top: -1px;
+  } 
+  
+  .registration__radio-input-female:checked+.registration__radio-label-female:after {
+    background: $pink-text;
+    background-size: 10px 10px;
+  }
