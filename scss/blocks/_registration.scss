@@ -1,7 +1,6 @@
 .registration__form {
     display: flex;
     flex-direction: column;
-    
 }
 
 .registration__wrap {
@@ -19,6 +18,7 @@
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
+    font-weight: 400;
     color: $pink-text;
     margin-bottom: 64px;
 
@@ -82,6 +82,7 @@ input::placeholder {
     margin-top: 39px;
     margin-bottom: 96px;
     display: inline-block;
+    transition: color 900ms, background 900ms;
 
     @media (max-width: $mobile-width) {
         margin-bottom: 40px;
@@ -94,6 +95,7 @@ input::placeholder {
 
 .registration__button-img {
     fill: $white;
+    transition: fill 1000ms;
 }
 
 .registration__button:hover,
