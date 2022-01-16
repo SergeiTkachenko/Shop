@@ -60,6 +60,7 @@
     background: rgba(58, 56, 56, 0.86);
     position: absolute;
     top: 0;
+    transition: opacity 700ms;
 }
   
 .products_button {
@@ -73,10 +74,18 @@
     line-height: 17px;
     color: $white;
     padding: 10px 13px;
+    transition: opacity 1500ms;
+    vertical-align: middle;
+    display: inline-flex;
+}
+
+.products_button--img {
+    fill: $white;
 }
  
 .products_button-text {
     margin-left: 11px;
+    margin-top: 6px;
 }
   
   
@@ -89,13 +98,19 @@
   
 .overlay,
 .products_button {
-    display: none;
+    opacity: 0;
 }
   
 .cart:hover .products_button,
 .cart:hover .overlay {
-    display: block;
+    opacity: 1;
+
 } 
+
+.cart:hover .products_button{
+    cursor: pointer;
+}
+
 /* konec knopki */
 
 .products__list {

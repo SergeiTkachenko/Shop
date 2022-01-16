@@ -1,0 +1,237 @@
+.product__title-text {
+    background-color: $pink-bkg;
+    width: 100%;
+    text-transform: uppercase;
+
+
+
+
+}
+
+.product__title-group {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile-width) {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.product__title {
+    padding: 60px 0 0 0;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $pink-text;
+
+    @media (max-width: $tablet-width) {
+        padding-left: 16px;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding-top: 24px;
+    }
+}
+
+.product__nav {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey-area;
+    padding: 65px 0 65px 0;  
+    
+    @media (max-width: $tablet-width) {
+        padding-right: 16px;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding: 32px 0 46px 0;
+    }
+}
+
+.product__nav-new {
+    font-weight: 700;
+    color: $pink-text;
+}
+
+.product__order {
+    max-width: 1140px;
+    height: 600px;
+    border: 1px solid $lightgray;
+    background-color: $white;
+    text-align: center;
+    margin: -55px auto 130px;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: $tablet-width) {
+        width: 768px;
+        height: 601px;
+        margin: 0 auto 129px;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding: 32px 0 46px 0;
+    }
+}
+
+.product__order-suptitle {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: $pink-text;
+    text-transform: uppercase;
+    margin-top: 64px;
+}
+
+.product__order-suptitle::after {
+    content: '';
+    width: 63px;
+    height: 3px;
+    background-color: $pink-text;
+    display: block;
+    margin: 12px auto;
+}
+
+.product__order-title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-darkgray;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.product__order-text {
+    width: 555px;
+    margin: 48px auto 32px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $text-darkgray;
+}
+
+.product__order-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $pink-text;
+    margin: 32px auto 65px;
+    padding-bottom: 65px;
+    width: 641px;
+    border-bottom: 1px solid $lightgray;
+}
+
+.product__order-choose {
+    display: flex;
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.product__order-choice {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-darkgray;
+    display: flex;
+}
+
+.product__order-choice:hover {
+    color: $pink-text;
+    cursor: pointer;
+}
+
+.product__order-choice::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid $text-darkgray;
+    border-left: 2px solid $text-darkgray;
+    z-index: 1;
+    transform: translateY(25%) 
+    rotate(-135deg);
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.product__button {
+    padding: 0;
+    width: 211px;
+    height: 47px;
+    border: 1px solid $pink-text;
+    background-color: $white;
+    transition: color 900ms, background 900ms;
+    color: $pink-text;
+    display: inline-flex;
+    margin: 49px 0 65px 0;
+    
+    @media (max-width: $mobile-width) {
+        margin-bottom: 40px;
+    }
+}
+
+.protuct__button-img {
+    width: 25px;
+    height: 25px;
+    margin: 11px 23px 11px 23px;
+    fill: $pink-text;
+    transition: fill 1000ms;
+}
+
+.product__button-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 0 14px;
+}
+
+.product__button:hover,
+.product__button:focus {
+    color: $white;
+    background: $pink-text;
+    cursor: pointer;
+}
+
+.product__button:hover .protuct__button-img,
+.product__button:focus .protuct__button-img {
+    fill: $white;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 777px;
+    background-color: #F7F7F7;
+}
+
+.d-block image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.d-block {
+    margin: 11px auto 42px;
+}
+
+// .carousel-control-next-icon {
+//     background-image: url(/Lesson2/img/arrow-right.svg);
+// }
+
+// .carousel-control-prev-icon {
+//     background-image: url(/Lesson2/img/arrow-left.svg);
+// }
+
+.products__list {
+    margin-bottom: 128px;
+}
